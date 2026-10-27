@@ -1,0 +1,6 @@
+{
+  "name": "IELTS Adaptive - Hệ Thống Ôn Luyện Thích Ứng",
+  "description": "Hệ thống ôn luyện IELTS thích ứng theo quy tắc sư phạm tất định (Explainable Deterministic Rules), chẩn đoán điểm nghẽn học thuật và cá nhân hóa học liệu đã thẩm định.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

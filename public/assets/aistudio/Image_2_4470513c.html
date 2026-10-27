@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IELTS Adaptive • Hệ Thống Ôn Luyện Thích Ứng</title>
+<!-- Material Symbols Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Plus Jakarta Sans & Inter Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary": "#ffffff",
+            "secondary-fixed-dim": "#c3c0ff",
+            "on-tertiary-fixed-variant": "#005137",
+            "surface-variant": "#d5e3fc",
+            "outline": "#757682",
+            "on-error-container": "#93000a",
+            "background": "#f8f9ff",
+            "on-primary-fixed": "#00164e",
+            "surface-container-highest": "#d5e3fc",
+            "tertiary-container": "#004a32",
+            "inverse-surface": "#233144",
+            "on-secondary-fixed": "#100069",
+            "on-secondary-fixed-variant": "#372abf",
+            "error": "#ba1a1a",
+            "primary-fixed": "#dce1ff",
+            "surface-container-low": "#eff4ff",
+            "tertiary-fixed-dim": "#68dba9",
+            "surface-tint": "#4059aa",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary": "#ffffff",
+            "on-background": "#0d1c2e",
+            "surface-container-high": "#dce9ff",
+            "tertiary": "#003120",
+            "surface-bright": "#f8f9ff",
+            "secondary-container": "#6860ef",
+            "error-container": "#ffdad6",
+            "primary-container": "#1e3a8a",
+            "on-error": "#ffffff",
+            "on-surface-variant": "#444651",
+            "tertiary-fixed": "#85f8c4",
+            "secondary-fixed": "#e3dfff",
+            "secondary": "#4e45d5",
+            "on-tertiary": "#ffffff",
+            "outline-variant": "#c5c5d3",
+            "on-tertiary-container": "#4ac08f",
+            "on-primary-fixed-variant": "#264191",
+            "inverse-on-surface": "#eaf1ff",
+            "on-surface": "#0d1c2e",
+            "primary": "#00236f",
+            "on-primary-container": "#90a8ff",
+            "on-secondary-container": "#fffbff",
+            "inverse-primary": "#b6c4ff",
+            "surface": "#f8f9ff",
+            "surface-container": "#e6eeff",
+            "primary-fixed-dim": "#b6c4ff",
+            "on-tertiary-fixed": "#002114",
+            "surface-dim": "#ccdbf3"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-md": "1rem",
+            "space-xs": "0.25rem",
+            "margin-sm": "1rem",
+            "gutter-lg": "2rem",
+            "space-sm": "0.5rem",
+            "gutter-sm": "1rem",
+            "margin-lg": "3rem",
+            "gutter": "1.5rem",
+            "margin": "2rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2rem"
+          },
+          "fontFamily": {
+            "title-md": ["Inter"],
+            "label-lg": ["Inter"],
+            "title-lg": ["Inter"],
+            "label-sm": ["Inter"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "body-md": ["Inter"],
+            "body-lg": ["Inter"],
+            "display-lg-mobile": ["Plus Jakarta Sans"],
+            "label-md": ["Inter"],
+            "headline-xl": ["Plus Jakarta Sans"],
+            "body-sm": ["Inter"],
+            "display-lg": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "title-md": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "600" }],
+            "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "title-lg": ["1.125rem", { "lineHeight": "1.625rem", "fontWeight": "600" }],
+            "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "headline-md": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-md": ["1rem", { "lineHeight": "1.625rem", "fontWeight": "400" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.875rem", "fontWeight": "400" }],
+            "display-lg-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.025em", "fontWeight": "600" }],
+            "headline-xl": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-sm": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }],
+            "display-lg": ["3rem", { "lineHeight": "3.5rem", "letterSpacing": "-0.025em", "fontWeight": "700" }],
+            "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.015em", "fontWeight": "600" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-scroll::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scroll::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md text-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TOP APP BAR -->
+<header class="bg-surface-container-lowest border-b border-outline-variant/50 sticky top-0 z-50 shadow-sm">
+<div class="flex justify-between items-center w-full px-margin-lg max-w-7xl mx-auto h-16">
+<!-- Logo & Branding -->
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-title-lg" data-icon="school">school</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="text-headline-md font-headline-md font-bold text-primary tracking-tight">IELTS Adaptive</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-primary border border-outline-variant/40">V3.2 Engine</span>
+</div>
+<p class="text-label-sm font-label-sm text-on-surface-variant hidden md:block">Hệ Thống Ôn Luyện Thích Ứng &amp; Chẩn Đoán Sư Phạm</p>
+</div>
+</div>
+<!-- Student Diagnostic Anchor Pill -->
+<div class="hidden lg:flex items-center gap-space-md bg-surface-container-low px-space-md py-1.5 rounded-lg border border-outline-variant/40">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim ring-2 ring-emerald-500/20"></span>
+<span class="font-title-md text-title-md text-on-surface">STU-2024-88A</span>
+</div>
+<div class="h-4 w-px bg-outline-variant/60"></div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="flag">flag</span>
+<span>Mục tiêu: <strong class="text-on-surface font-semibold">Band 6.5 - 7.0</strong></span>
+</div>
+<div class="h-4 w-px bg-outline-variant/60"></div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="timer">timer</span>
+<span>Còn: <strong class="text-on-surface font-semibold">6 tuần</strong> (6h/tuần)</span>
+</div>
+</div>
+<!-- Trailing Action Controls -->
+<div class="flex items-center gap-space-sm">
+<!-- Role Toggle Pill -->
+<div class="bg-surface-container-low p-1 rounded-lg border border-outline-variant/40 flex items-center">
+<button class="px-space-sm py-1 rounded text-label-md font-label-md bg-surface-container-lowest text-primary shadow-sm font-semibold transition-all" id="role-student-btn">
+            Sinh viên
+          </button>
+<button class="px-space-sm py-1 rounded text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-all" id="role-tutor-btn">
+            Giảng viên
+          </button>
+</div>
+<!-- Trailing Primary Action -->
+<button class="hidden sm:inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-primary-container text-on-primary font-title-md text-title-md hover:bg-secondary transition-all duration-150 shadow-sm" id="open-log-btn">
+<span class="material-symbols-outlined text-base" data-icon="upload_file">upload_file</span>
+<span>Nạp bài làm mới</span>
+</button>
+<!-- Export Diagnostics Action -->
+<button class="inline-flex items-center gap-1 px-3 py-2 rounded-lg border border-outline-variant bg-surface-container-lowest text-on-surface hover:bg-surface-container-low font-title-md text-title-md transition-all duration-150" onclick="triggerExportNotice()" title="Xuất báo cáo chẩn đoán">
+<span class="material-symbols-outlined text-base" data-icon="file_download">file_download</span>
+<span class="hidden xl:inline">Xuất báo cáo</span>
+</button>
+<!-- Icon Actions -->
+<div class="flex items-center border-l border-outline-variant/40 pl-space-xs ml-space-xs">
+<button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" title="Thông báo cập nhật thuật toán">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" onclick="toggleHelpModal()" title="Trợ giúp &amp; Quy tắc sư phạm">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- APPLICATION SHELL CONTAINER -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex gap-8">
+<!-- LEFT SIDEBAR COMPONENT -->
+<aside class="w-64 shrink-0 hidden lg:block">
+<div class="sticky top-24 bg-surface-container-lowest rounded-xl border border-outline-variant/60 p-space-md shadow-sm">
+<!-- User Badge -->
+<div class="pb-space-md mb-space-md border-b border-outline-variant/40 flex items-center gap-3">
+<div class="w-11 h-11 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-bold font-title-lg text-title-lg">
+            88A
+          </div>
+<div>
+<div class="text-title-md font-title-md text-primary">STU-2024-88A</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant">Mục tiêu: Band 6.5 - 7.0</div>
+</div>
+</div>
+<!-- Navigation Tabs -->
+<nav class="space-y-1 mb-space-lg">
+<a class="flex items-center gap-space-sm bg-surface-container-low text-primary font-title-md text-title-md rounded-lg px-space-md py-space-sm border-l-4 border-primary shadow-xs" href="#overview">
+<span class="material-symbols-outlined text-primary" data-icon="analytics">analytics</span>
+<span>Tổng quan chẩn đoán</span>
+</a>
+<a class="flex items-center gap-space-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-label-lg text-label-lg rounded-lg px-space-md py-space-sm transition-colors duration-150" href="#adaptive-pathway">
+<span class="material-symbols-outlined" data-icon="route">route</span>
+<span>Lộ trình thích ứng</span>
+</a>
+<a class="flex items-center gap-space-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-label-lg text-label-lg rounded-lg px-space-md py-space-sm transition-colors duration-150" href="#curated-bank">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span>Ngân hàng học liệu</span>
+</a>
+<a class="flex items-center gap-space-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-label-lg text-label-lg rounded-lg px-space-md py-space-sm transition-colors duration-150" href="#root-cause-section">
+<span class="material-symbols-outlined" data-icon="troubleshoot">troubleshoot</span>
+<span>Phân tích nguyên nhân</span>
+</a>
+<a class="flex items-center gap-space-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-label-lg text-label-lg rounded-lg px-space-md py-space-sm transition-colors duration-150" href="#changelog-panel">
+<span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+<span>Lịch sử cập nhật lộ trình</span>
+</a>
+<a class="flex items-center gap-space-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-label-lg text-label-lg rounded-lg px-space-md py-space-sm transition-colors duration-150" href="#simulator-panel">
+<span class="material-symbols-outlined" data-icon="model_training">model_training</span>
+<span>Giả lập Archetype</span>
+</a>
+</nav>
+<!-- CTA Sidebar Button -->
+<button class="w-full mb-space-lg flex items-center justify-center gap-2 px-space-md py-2.5 rounded-lg bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary font-title-md text-title-md transition-all duration-150 border border-outline-variant/40" onclick="scrollToSimulation()">
+<span class="material-symbols-outlined text-sm" data-icon="play_circle">play_circle</span>
+<span>Thử nghiệm thuật toán</span>
+</button>
+<!-- Sub / Footer Tab Labels -->
+<div class="pt-space-md border-t border-outline-variant/40 space-y-1">
+<a class="flex items-center gap-space-sm text-on-surface-variant hover:text-primary font-label-md text-label-md px-space-sm py-1.5 rounded transition-colors" href="javascript:void(0)" onclick="openSettingsModal()">
+<span class="material-symbols-outlined text-sm" data-icon="settings">settings</span>
+<span>Cấu hình &amp; Giới hạn (N ≥ 5)</span>
+</a>
+<a class="flex items-center gap-space-sm text-on-surface-variant hover:text-primary font-label-md text-label-md px-space-sm py-1.5 rounded transition-colors" href="javascript:void(0)" onclick="toggleRole()">
+<span class="material-symbols-outlined text-sm" data-icon="switch_account">switch_account</span>
+<span>Chuyển chế độ Giảng viên</span>
+</a>
+</div>
+<!-- Academic Rigor Watermark -->
+<div class="mt-space-lg p-3 bg-surface-container-low rounded-lg border border-outline-variant/40 text-label-sm font-label-sm text-on-surface-variant leading-relaxed">
+<div class="flex items-center gap-1 font-semibold text-primary mb-1">
+<span class="material-symbols-outlined text-xs" data-icon="verified">verified</span>
+<span>Pedagogical Engine</span>
+</div>
+          Xử lý suy luận tất định (Deterministic Logic). Không tạo sinh dữ liệu ảo hoặc lời khuyên giả lập.
+        </div>
+</div>
+</aside>
+<!-- MAIN DASHBOARD CONTENT CANVAS -->
+<main class="flex-1 min-w-0 space-y-6">
+<!-- BANNER: KIỂM ĐỊNH SƯ PHẠM (Explainable Pedagogical Verification) -->
+<section class="rounded-xl border border-secondary/30 bg-surface-container-low p-4 sm:p-5 relative overflow-hidden shadow-xs">
+<div class="flex items-start gap-3 sm:gap-4">
+<div class="w-10 h-10 rounded-lg bg-secondary text-on-secondary shrink-0 flex items-center justify-center mt-0.5 shadow-sm">
+<span class="material-symbols-outlined text-xl" data-icon="verified_user">verified_user</span>
+</div>
+<div class="flex-1">
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<h1 class="text-title-lg font-title-lg text-primary font-bold">Cam kết Kiểm định Sư phạm &amp; Minh bạch Thuật toán</h1>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-tertiary-fixed-dim/20 text-tertiary-container font-semibold border border-tertiary-fixed-dim/40">Explainable AI / Rules-based</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Mọi chẩn đoán đều dựa trên quy tắc giải thích được (Explainable Rules). Dữ liệu dưới ngưỡng tối thiểu (<strong class="text-on-surface font-semibold">N &lt; 5 câu/dạng</strong>) sẽ trả về trạng thái <span class="bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface-variant font-mono font-medium text-xs">Chưa đủ dữ liệu</span> thay vì suy đoán cảm tính. Tiến trình dựa vào hồ sơ làm bài thực tế của bạn.
+            </p>
+</div>
+</div>
+</section>
+<!-- TOP SUMMARY METRIC CARDS (Bento Grid) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" id="overview">
+<!-- Metric 1: Reading Mastery -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/60 p-5 shadow-sm hover:border-primary/50 transition-all">
+<div class="flex items-center justify-between mb-3">
+<span class="text-label-md font-label-md text-on-surface-variant uppercase tracking-wider">Reading Mastery</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-amber-50 text-amber-800 border border-amber-200 font-medium">Cần cải thiện</span>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="text-headline-xl font-headline-xl font-bold text-on-surface">62%</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">(Band ước lượng: <strong class="text-primary font-semibold">5.5 - 6.0</strong>)</span>
+</div>
+<!-- Progress bar -->
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden my-2.5">
+<div class="bg-amber-500 h-2 rounded-full" style="width: 62%"></div>
+</div>
+<p class="text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-error" data-icon="trending_down">trending_down</span>
+<span>Hụt điểm ở Passage 2 &amp; 3 (-18% so với Pass 1)</span>
+</p>
+</div>
+<!-- Metric 2: Listening Mastery -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/60 p-5 shadow-sm hover:border-primary/50 transition-all">
+<div class="flex items-center justify-between mb-3">
+<span class="text-label-md font-label-md text-on-surface-variant uppercase tracking-wider">Listening Mastery</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-emerald-50 text-emerald-800 border border-emerald-200 font-medium">Tiến triển tốt</span>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="text-headline-xl font-headline-xl font-bold text-on-surface">74%</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">(Band ước lượng: <strong class="text-tertiary-container font-semibold">6.5</strong>)</span>
+</div>
+<!-- Progress bar -->
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden my-2.5">
+<div class="bg-emerald-600 h-2 rounded-full" style="width: 74%"></div>
+</div>
+<p class="text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-emerald-600" data-icon="trending_up">trending_up</span>
+<span>Section 1 &amp; 2 đạt 88% chính xác</span>
+</p>
+</div>
+<!-- Metric 3: Primary Bottleneck -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/60 p-5 shadow-sm hover:border-primary/50 transition-all">
+<div class="flex items-center justify-between mb-3">
+<span class="text-label-md font-label-md text-on-surface-variant uppercase tracking-wider">Điểm nghẽn cốt lõi</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-rose-50 text-rose-800 border border-rose-200 font-medium">Ưu tiên #1</span>
+</div>
+<div class="text-title-lg font-title-lg font-bold text-error mb-1 truncate">
+            True/False/Not Given
+          </div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-2">
+            Kèm cạn kiệt thời gian ở Section 3 (Reading).
+          </p>
+<div class="inline-flex items-center gap-1 text-label-sm font-label-sm text-primary font-semibold bg-primary-fixed/30 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-xs" data-icon="speed">speed</span>
+<span>Thời gian/câu: 2.4 phút (Chuẩn: 1.5p)</span>
+</div>
+</div>
+<!-- Metric 4: Confidence Score -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/60 p-5 shadow-sm hover:border-primary/50 transition-all">
+<div class="flex items-center justify-between mb-3">
+<span class="text-label-md font-label-md text-on-surface-variant uppercase tracking-wider">Độ tin cậy chẩn đoán</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-blue-50 text-primary border border-blue-200 font-medium">Mức Cao</span>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="text-headline-xl font-headline-xl font-bold text-primary">High</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">(4 bài nộp gần nhất)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden my-2.5">
+<div class="bg-primary h-2 rounded-full" style="width: 88%"></div>
+</div>
+<p class="text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="fact_check">fact_check</span>
+<span>Tổng mẫu kiểm: <strong>120 câu hỏi</strong> đã phân loại</span>
+</p>
+</div>
+</section>
+<!-- SECTION 1: BẢNG CHẨN ĐOÁN ĐIỂM YẾU & NGUYÊN NHÂN GỐC (ROOT CAUSE ENGINE) -->
+<section class="bg-surface-container-lowest rounded-xl border border-outline-variant/60 overflow-hidden shadow-sm" id="root-cause-section">
+<div class="p-5 border-b border-outline-variant/40 flex flex-col sm:flex-row justify-between sm:items-center gap-3 bg-surface-container-low/40">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="troubleshoot">troubleshoot</span>
+<h2 class="text-title-lg font-title-lg text-primary font-bold">Chẩn đoán Điểm yếu &amp; Phân tích Nguyên nhân gốc</h2>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Phân tích bằng chứng sai số học thuật (Error Evidence) kết hợp phân loại sai lầm sư phạm</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-label-sm font-label-sm text-on-surface-variant">Lọc dữ liệu:</span>
+<select class="text-label-md font-label-md bg-surface-container-lowest border border-outline-variant/60 rounded-lg px-2.5 py-1 text-on-surface focus:ring-1 focus:ring-primary">
+<option>Tất cả dạng bài (All Question Types)</option>
+<option>Chỉ dạng báo động (Mastery &lt; 50%)</option>
+<option>Dạng cần kiểm tra mẫu (N &lt; 5)</option>
+</select>
+</div>
+</div>
+<!-- Diagnostic Table -->
+<div class="overflow-x-auto custom-scroll">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container text-label-md font-label-md text-on-surface-variant uppercase tracking-wider border-b border-outline-variant/60">
+<th class="py-3 px-4">Dạng bài (Question Type)</th>
+<th class="py-3 px-3 text-center">Mastery</th>
+<th class="py-3 px-4">Bằng chứng lỗi (Empirical Evidence)</th>
+<th class="py-3 px-4">Nguyên nhân gốc (Root Cause)</th>
+<th class="py-3 px-3 text-center">Độ tin cậy</th>
+<th class="py-3 px-4">Hành động khắc phục đề xuất</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/30 text-body-sm font-body-sm">
+<!-- Item 1: T/F/NG -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-4 px-4 font-semibold text-on-surface">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-red-600"></span>
+<span>True / False / Not Given</span>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface-variant font-normal">Reading Academic Passage 1 &amp; 2</span>
+</td>
+<td class="py-4 px-3 text-center">
+<span class="inline-block px-2.5 py-1 rounded text-label-md font-label-md bg-rose-50 text-rose-800 border border-rose-200 font-bold">
+                    42%
+                  </span>
+</td>
+<td class="py-4 px-4 text-on-surface-variant">
+<p class="font-medium text-error">Sai 7 / 12 câu gần nhất</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Nhầm lẫn 5 lần giữa <em>False</em> và <em>Not Given</em>; không tìm thấy contradict rõ ràng.</p>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 text-label-sm font-label-sm font-semibold text-indigo-900 bg-indigo-50 border border-indigo-200 px-2 py-0.5 rounded mb-1">
+<span class="material-symbols-outlined text-xs" data-icon="psychology">psychology</span>
+<span>Logic Deduction Error</span>
+</span>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                    Độc giả suy luận vượt quá phạm vi thông tin bài đọc (Extrapolation bias) thay vì bám sát chứng cứ đoạn văn.
+                  </p>
+</td>
+<td class="py-4 px-3 text-center">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-blue-50 text-primary border border-blue-200 font-semibold">
+                    Cao (N=12)
+                  </span>
+</td>
+<td class="py-4 px-4">
+<button class="inline-flex items-center gap-1 text-primary hover:text-secondary font-title-md text-title-md hover:underline" onclick="scrollToMaterials('MAT-RD-01')">
+<span>Luyện 20 ví dụ đối chiếu F vs NG</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</td>
+</tr>
+<!-- Item 2: Matching Headings -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-4 px-4 font-semibold text-on-surface">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-amber-500"></span>
+<span>Matching Headings</span>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface-variant font-normal">Reading Academic Passage 2</span>
+</td>
+<td class="py-4 px-3 text-center">
+<span class="inline-block px-2.5 py-1 rounded text-label-md font-label-md bg-amber-50 text-amber-800 border border-amber-200 font-bold">
+                    55%
+                  </span>
+</td>
+<td class="py-4 px-4 text-on-surface-variant">
+<p class="font-medium text-amber-900">Tốn TB 2.8 phút / câu</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Thường sai ở các đoạn văn có distractor ở câu 1 và câu cuối.</p>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 text-label-sm font-label-sm font-semibold text-amber-900 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded mb-1">
+<span class="material-symbols-outlined text-xs" data-icon="search">search</span>
+<span>Inefficient Skimming</span>
+</span>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                    Đọc dịch từng từ (Linear Reading) thay vì quét ý chính cả đoạn và nhận diện cấu trúc luận điểm.
+                  </p>
+</td>
+<td class="py-4 px-3 text-center">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-slate-100 text-slate-700 border border-slate-300 font-semibold">
+                    Trung bình (N=8)
+                  </span>
+</td>
+<td class="py-4 px-4">
+<button class="inline-flex items-center gap-1 text-primary hover:text-secondary font-title-md text-title-md hover:underline" onclick="scrollToMaterials('MAT-RD-04')">
+<span>Luyện quét Topic Sentence</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</td>
+</tr>
+<!-- Item 3: Multiple Choice Sec 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-4 px-4 font-semibold text-on-surface">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-rose-600"></span>
+<span>Multiple Choice (Passage 3)</span>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface-variant font-normal">Độ dài học thuật cao</span>
+</td>
+<td class="py-4 px-3 text-center">
+<span class="inline-block px-2.5 py-1 rounded text-label-md font-label-md bg-rose-50 text-rose-800 border border-rose-200 font-bold">
+                    38%
+                  </span>
+</td>
+<td class="py-4 px-4 text-on-surface-variant">
+<p class="font-medium text-error">4 câu cuối chọn lụi trong 30s</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Dữ liệu telemetry cho thấy click liên tiếp ở 30 giây cuối cùng.</p>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 text-label-sm font-label-sm font-semibold text-rose-900 bg-rose-50 border border-rose-200 px-2 py-0.5 rounded mb-1">
+<span class="material-symbols-outlined text-xs" data-icon="alarm">alarm</span>
+<span>Time Exhaustion</span>
+</span>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                    Chi phối thời gian quá nhiều cho Passage 1 (mất 24 phút thay vì 17 phút tiêu chuẩn).
+                  </p>
+</td>
+<td class="py-4 px-3 text-center">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-blue-50 text-primary border border-blue-200 font-semibold">
+                    Rất cao (Telemetry)
+                  </span>
+</td>
+<td class="py-4 px-4">
+<span class="text-on-surface-variant text-label-md font-label-md">Áp dụng khung 15-20-25 phút</span>
+</td>
+</tr>
+<!-- Item 4: Summary Completion -->
+<tr class="hover:bg-surface-container-low/50 transition-colors bg-emerald-50/20">
+<td class="py-4 px-4 font-semibold text-on-surface">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+<span>Summary Completion</span>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface-variant font-normal">Điền từ có / không có box</span>
+</td>
+<td class="py-4 px-3 text-center">
+<span class="inline-block px-2.5 py-1 rounded text-label-md font-label-md bg-emerald-50 text-emerald-800 border border-emerald-200 font-bold">
+                    85%
+                  </span>
+</td>
+<td class="py-4 px-4 text-on-surface-variant">
+<p class="font-medium text-emerald-800">Đúng 17 / 20 câu</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Định vị từ khóa loại từ (Grammar class) rất chuẩn xác.</p>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 text-label-sm font-label-sm font-semibold text-emerald-900 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded mb-1">
+<span class="material-symbols-outlined text-xs" data-icon="check_circle">check_circle</span>
+<span>Mastered Skill</span>
+</span>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                    Kỹ năng nắm bắt Word form và ngữ pháp ngữ cảnh đã vững vàng.
+                  </p>
+</td>
+<td class="py-4 px-3 text-center">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-blue-50 text-primary border border-blue-200 font-semibold">
+                    Cao (N=20)
+                  </span>
+</td>
+<td class="py-4 px-4">
+<span class="text-tertiary-container font-semibold text-label-md font-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="task_alt">task_alt</span>
+<span>Duy trì luyện tập định kỳ</span>
+</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Footer rule explanation -->
+<div class="p-3 bg-surface-container-low border-t border-outline-variant/40 flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span>* Dạng bài chưa hiển thị: <em>Map Labelling (Listening)</em> do mới có N=3 câu → Đang tạm giữ nhãn "Chưa đủ dữ liệu".</span>
+<span class="font-mono text-xs">Cập nhật: 09:30 AM hôm nay</span>
+</div>
+</section>
+<!-- SECTION 2: LỘ TRÌNH THÍCH ỨNG ĐỘNG (DYNAMIC ADAPTIVE PATHWAY) -->
+<section class="bg-surface-container-lowest rounded-xl border border-outline-variant/60 p-5 sm:p-6 shadow-sm" id="adaptive-pathway">
+<div class="flex flex-col sm:flex-row justify-between sm:items-center gap-3 pb-5 mb-5 border-b border-outline-variant/40">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="route">route</span>
+<h2 class="text-headline-md font-headline-md text-primary font-bold">Lộ trình Ôn tập Thích ứng Động</h2>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Lập trình theo thứ tự ưu tiên sư phạm; tự động tái cơ cấu khi phát hiện điểm nghẽn mới</p>
+</div>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-label-md font-label-md bg-surface-container-high text-primary font-semibold">
+<span class="material-symbols-outlined text-sm" data-icon="sync">sync</span>
+<span>Mô hình thích ứng theo chu kỳ kiểm tra</span>
+</span>
+</div>
+<!-- Dynamic Pathway Steps (Timeline Grid) -->
+<div class="space-y-4">
+<!-- Step 1: In Progress / Priority #1 -->
+<div class="border-2 border-primary rounded-xl p-4 sm:p-5 bg-surface-container-low/30 relative">
+<div class="absolute -top-3 left-4 bg-primary text-on-primary text-label-sm font-label-sm px-3 py-0.5 rounded-full font-bold uppercase tracking-wider shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" data-icon="priority_high">priority_high</span>
+<span>Bước 1: Đang học • Ưu tiên cao nhất</span>
+</div>
+<div class="flex flex-col md:flex-row md:items-start justify-between gap-4 mt-2">
+<div class="space-y-2 flex-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-primary-fixed text-on-primary-fixed font-bold">Nền tảng</span>
+<h3 class="text-title-lg font-title-lg text-primary font-bold">Kỹ thuật phân biệt 'False' vs 'Not Given' qua Phân tích Mâu thuẫn Trực tiếp</h3>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+                  Nguyên tắc cốt lõi: <strong>False</strong> bắt buộc phải có câu từ trong bài đọc mâu thuẫn 100% với đề bài (Direct Contradiction). Nếu thông tin không thể khẳng định đúng hay sai hoặc thiếu dữ kiện xác minh, bắt buộc chọn <strong>Not Given</strong>. Tuyệt đối không tự suy diễn kiến thức ngoài bài đọc.
+                </p>
+<div class="flex flex-wrap items-center gap-3 pt-2 text-label-md font-label-md">
+<span class="text-on-surface-variant">Học liệu chỉ định:</span>
+<span class="inline-flex items-center gap-1 text-primary font-semibold bg-surface-container-lowest border border-outline-variant/60 px-2.5 py-1 rounded">
+<span class="material-symbols-outlined text-sm" data-icon="book">book</span>
+<span>Cambridge 16 Test 2 Reading Passage 1 Analysis (Có sẵn trong ngân hàng)</span>
+</span>
+<span class="text-label-sm font-label-sm text-emerald-700 bg-emerald-50 px-2 py-1 rounded font-semibold border border-emerald-200">
+                    Mã MAT-RD-01
+                  </span>
+</div>
+</div>
+<div class="shrink-0 flex flex-col items-end justify-center gap-2">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary font-title-md text-title-md hover:bg-secondary transition-all shadow-sm" href="#curated-bank">
+<span class="material-symbols-outlined text-sm" data-icon="play_arrow">play_arrow</span>
+<span>Bắt đầu phiên học ngay</span>
+</a>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Dự kiến hoàn thành: 45 phút</span>
+</div>
+</div>
+</div>
+<!-- Step 2: Next in Queue -->
+<div class="border border-outline-variant/60 rounded-xl p-4 sm:p-5 bg-surface-container-lowest hover:border-outline transition-all">
+<div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
+<div class="space-y-1.5 flex-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface-variant font-bold">Kỹ thuật</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant font-semibold">Bước 2 (Chờ mở khóa)</span>
+<h3 class="text-title-md font-title-md text-on-surface font-semibold">Chiến lược Skimming &amp; Đánh dấu Từ khóa Paragraph Headings</h3>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+                  Xử lý dạng bài Matching Headings nhanh hơn bằng kỹ thuật xác định câu chủ đề (Topic Sentences), các từ chuyển ý (Signposting words), và loại bỏ bẫy danh từ đơn lẻ.
+                </p>
+<div class="text-label-sm font-label-sm text-on-surface-variant pt-1">
+                  Điều kiện mở khóa: Hoàn thành 15/20 câu F/NG ở Bước 1 đạt tỷ lệ chính xác ≥ 75%.
+                </div>
+</div>
+<div class="shrink-0">
+<span class="inline-flex items-center gap-1 text-label-md font-label-md text-on-surface-variant bg-surface-container-low px-3 py-1.5 rounded-lg border border-outline-variant/40">
+<span class="material-symbols-outlined text-sm" data-icon="lock">lock</span>
+<span>Sắp diễn ra</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Step 3: Speed & Strategy -->
+<div class="border border-outline-variant/60 rounded-xl p-4 sm:p-5 bg-surface-container-lowest hover:border-outline transition-all">
+<div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
+<div class="space-y-1.5 flex-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface-variant font-bold">Tốc độ &amp; Chiến thuật</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant font-semibold">Bước 3</span>
+<h3 class="text-title-md font-title-md text-on-surface font-semibold">Chiến thuật Phân bổ Thời gian 15 - 20 - 25 Phút cho 3 Passages</h3>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+                  Luyện phản xạ chuyển bài đúng thời điểm (Stop-loss time discipline). Chấm dứt tình trạng dồn 30 giây cuối cho Passage 3 dẫn đến điểm số dưới 40% ở Multiple Choice.
+                </p>
+<div class="text-label-sm font-label-sm text-on-surface-variant pt-1">
+                  Đánh giá định kỳ: Mô phỏng Mock Exam bấm giờ chuẩn áp lực phòng thi.
+                </div>
+</div>
+<div class="shrink-0">
+<span class="inline-flex items-center gap-1 text-label-md font-label-md text-on-surface-variant bg-surface-container-low px-3 py-1.5 rounded-lg border border-outline-variant/40">
+<span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span>
+<span>Kế hoạch tuần 3</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+<!-- THẺ GHI CHÚ LÝ DO THAY ĐỔI LỘ TRÌNH (CHANGELOG PANEL) -->
+<div class="mt-5 p-4 rounded-xl bg-surface-container-low border border-outline-variant/60" id="changelog-panel">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-0.5" data-icon="history_toggle_off">history_toggle_off</span>
+<div class="space-y-1 text-body-sm font-body-sm">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-bold text-primary font-title-md text-title-md">Nhật ký lý do thay đổi lộ trình (Adaptive Changelog):</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-lowest text-on-surface-variant font-mono">09:30 AM Hôm nay</span>
+</div>
+<p class="text-on-surface leading-relaxed">
+                Hệ thống tự động kích hoạt luật điều chỉnh: <span class="font-semibold text-error">Rule ID #R-LOGIC-08</span>. Đã đẩy bài học <strong>True/False/Not Given</strong> lên vị trí số 1 vì tỷ lệ sai lệch giữa False &amp; Not Given lặp lại liên tiếp trong 3 bài kiểm tra gần nhất (N=12 câu, lỗi đạt 58.3%). Các bài luyện Ngữ pháp câu phức tạm thời chuyển về chế độ luyện tập phụ.
+              </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: NGÂN HÀNG HỌC LIỆU ĐÃ XÁC THỰC (CURATED MATERIAL BANK) -->
+<section class="bg-surface-container-lowest rounded-xl border border-outline-variant/60 p-5 sm:p-6 shadow-sm" id="curated-bank">
+<div class="flex flex-col sm:flex-row justify-between sm:items-center gap-3 pb-5 mb-5 border-b border-outline-variant/40">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="menu_book">menu_book</span>
+<h2 class="text-headline-md font-headline-md text-primary font-bold">Ngân Hàng Học Liệu Đã Xác Thực</h2>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Nguồn tài nguyên trích xuất nguyên bản từ kho tài liệu đã được thẩm định học thuật</p>
+</div>
+<!-- Material availability status badge -->
+<div class="flex items-center gap-2 bg-emerald-50 text-emerald-800 border border-emerald-200 px-3 py-1.5 rounded-lg text-label-md font-label-md">
+<span class="material-symbols-outlined text-sm text-emerald-700" data-icon="check_circle">check_circle</span>
+<span class="font-semibold">Trạng thái: Đủ học liệu cho 3 bước tiếp theo</span>
+</div>
+</div>
+<!-- Curated Materials Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- MAT-RD-01 -->
+<div class="border-2 border-primary/40 bg-surface-container-lowest rounded-xl p-4 flex flex-col justify-between hover:shadow-md transition-all" id="card-MAT-RD-01">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-mono text-label-sm font-label-sm bg-primary-fixed text-on-primary-fixed px-2 py-0.5 rounded font-bold">MAT-RD-01</span>
+<span class="text-label-sm font-label-sm bg-blue-50 text-primary px-2 py-0.5 rounded font-semibold border border-blue-200">Độ khó: Band 6.0</span>
+</div>
+<h4 class="text-title-md font-title-md font-bold text-on-surface leading-snug">
+                Chuyên đề Phân biệt False &amp; Not Given qua 20 ví dụ đối chiếu trực diện
+              </h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+                Gồm 20 câu đối chứng trích từ đề thi thật; phân tích vì sao câu thiếu điều kiện khẳng định (Not Given) lại thường bị ngộ nhận là Sai (False).
+              </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="text-label-sm font-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">Reading</span>
+<span class="text-label-sm font-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">Logic</span>
+<span class="text-label-sm font-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">F/NG</span>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/40 flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-emerald-700 font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" data-icon="task">task</span>
+<span>Khớp bước 1</span>
+</span>
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary text-title-md font-title-md hover:bg-secondary transition-all" onclick="launchExercise('MAT-RD-01')">
+                Luyện tập
+              </button>
+</div>
+</div>
+<!-- MAT-RD-04 -->
+<div class="border border-outline-variant/60 bg-surface-container-lowest rounded-xl p-4 flex flex-col justify-between hover:shadow-md transition-all" id="card-MAT-RD-04">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-mono text-label-sm font-label-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded font-bold">MAT-RD-04</span>
+<span class="text-label-sm font-label-sm bg-purple-50 text-purple-900 px-2 py-0.5 rounded font-semibold border border-purple-200">Độ khó: Band 6.5</span>
+</div>
+<h4 class="text-title-md font-title-md font-bold text-on-surface leading-snug">
+                Luyện Paraphrase Câu phức Học thuật Đoạn văn Passage 2
+              </h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+                Tập trung vào kỹ năng phân rã cấu trúc câu ghép, mệnh đề quan hệ và các cụm danh từ phức tạp trong bài đọc khoa học xã hội.
+              </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="text-label-sm font-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">Vocabulary</span>
+<span class="text-label-sm font-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">Reading</span>
+<span class="text-label-sm font-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">Paraphrase</span>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/40 flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" data-icon="library_books">library_books</span>
+<span>Tài liệu tự đọc</span>
+</span>
+<button class="px-3 py-1.5 rounded-lg border border-outline-variant text-on-surface hover:bg-surface-container text-title-md font-title-md transition-all" onclick="launchExercise('MAT-RD-04')">
+                Mở tài liệu
+              </button>
+</div>
+</div>
+<!-- MAT-LS-02 -->
+<div class="border border-outline-variant/60 bg-surface-container-lowest rounded-xl p-4 flex flex-col justify-between hover:shadow-md transition-all" id="card-MAT-LS-02">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-mono text-label-sm font-label-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded font-bold">MAT-LS-02</span>
+<span class="text-label-sm font-label-sm bg-purple-50 text-purple-900 px-2 py-0.5 rounded font-semibold border border-purple-200">Độ khó: Band 6.5</span>
+</div>
+<h4 class="text-title-md font-title-md font-bold text-on-surface leading-snug">
+                Section 3 Listening: Nhận diện Bẫy Chuyển Hướng (Distractors)
+              </h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+                Phương pháp bắt kịp hội thoại khi hai người nói thay đổi quan điểm đột ngột (từ 'However', 'Actually', 'I thought so at first').
+              </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="text-label-sm font-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">Listening</span>
+<span class="text-label-sm font-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">Discourse</span>
+<span class="text-label-sm font-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">Sec 3</span>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/40 flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" data-icon="headphones">headphones</span>
+<span>File Audio &amp; Kèm script</span>
+</span>
+<button class="px-3 py-1.5 rounded-lg border border-outline-variant text-on-surface hover:bg-surface-container text-title-md font-title-md transition-all" onclick="launchExercise('MAT-LS-02')">
+                Mở Audio
+              </button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: MODAL/PANEL GIẢ LẬP KIỂM THỬ ARCHETYPE (TEST SIMULATOR & DETERMINISTIC ENGINE) -->
+<section class="bg-surface-container-lowest rounded-xl border border-outline-variant/60 p-5 sm:p-6 shadow-sm" id="simulator-panel">
+<div class="flex flex-col sm:flex-row justify-between sm:items-center gap-3 pb-5 mb-5 border-b border-outline-variant/40">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="model_training">model_training</span>
+<h2 class="text-headline-md font-headline-md text-primary font-bold">Bảng Giả Lập Kiểm Thử Thuật Toán (Archetype Simulator)</h2>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Mô phỏng cơ chế ra quyết định sư phạm tất định (Deterministic Logic Engine) trên 3 hồ sơ sinh viên mẫu
+            </p>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="text-label-sm font-label-sm text-on-surface font-mono font-semibold">Rules v2.4 Live</span>
+</div>
+</div>
+<!-- Archetype Selection Buttons -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-6">
+<button class="p-4 rounded-xl border-2 border-outline-variant/60 hover:border-primary text-left bg-surface-container-lowest transition-all" id="arch-btn-A" onclick="selectArchetype('A')">
+<div class="flex items-center justify-between mb-2">
+<span class="font-bold text-primary font-title-md text-title-md">Sinh viên A</span>
+<span class="text-label-sm font-label-sm bg-rose-50 text-rose-800 px-2 py-0.5 rounded font-semibold">Từ vựng yếu</span>
+</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant font-medium">Thiếu vốn từ vựng &amp; Paraphrase học thuật</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant mt-2">Sai đều cả Passage 1 &amp; 2 do không nhận diện từ đồng nghĩa.</div>
+</button>
+<button class="p-4 rounded-xl border-2 border-primary bg-surface-container-low text-left transition-all" id="arch-btn-B" onclick="selectArchetype('B')">
+<div class="flex items-center justify-between mb-2">
+<span class="font-bold text-primary font-title-md text-title-md">Sinh viên B (Hiện tại)</span>
+<span class="text-label-sm font-label-sm bg-blue-50 text-primary px-2 py-0.5 rounded font-semibold">Lỗi logic F/NG</span>
+</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant font-medium">Thiếu kỹ thuật phân biệt logic trực tiếp</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant mt-2">Từ vựng tốt nhưng suy diễn quá đà giữa False và Not Given.</div>
+</button>
+<button class="p-4 rounded-xl border-2 border-outline-variant/60 hover:border-primary text-left bg-surface-container-lowest transition-all" id="arch-btn-C" onclick="selectArchetype('C')">
+<div class="flex items-center justify-between mb-2">
+<span class="font-bold text-primary font-title-md text-title-md">Sinh viên C</span>
+<span class="text-label-sm font-label-sm bg-amber-50 text-amber-800 px-2 py-0.5 rounded font-semibold">Kẹt thời gian</span>
+</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant font-medium">Quản lý thời gian kém (Time Management)</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant mt-2">Passage 1 làm quá kỹ (25 phút), Passage 3 phải đánh lụi.</div>
+</button>
+</div>
+<!-- Archetype Output Console Panel -->
+<div class="bg-inverse-surface text-inverse-on-surface rounded-xl p-5 font-mono text-body-sm font-body-sm space-y-4">
+<div class="flex items-center justify-between border-b border-outline/30 pb-3">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-red-500"></span>
+<span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+<span class="w-3 h-3 rounded-full bg-green-500"></span>
+<span class="text-xs text-inverse-primary pl-2">Engine Console Trace • deterministic_decision_tree.py</span>
+</div>
+<span class="text-xs text-outline-variant">Status: OK</span>
+</div>
+<div class="space-y-2 text-xs leading-relaxed text-inverse-on-surface" id="arch-console-output">
+<!-- Dynamic Content Injected via JS -->
+<p class="text-emerald-400">[HỒ SƠ SINH VIÊN B ĐƯỢC CHỌN]</p>
+<p>&gt; Dữ liệu đầu vào: N_attempts = 12, False_rate = 58.3%, Contradiction_Detection = Thấp, Time_spent_P1 = 16.5m (Bình thường).</p>
+<p>&gt; Kiểm định điều kiện: Rule R-LOGIC-08 [Triggered = TRUE] vì sai lệch False/NG vượt ngưỡng 40% trong 3 bài nộp liên tiếp.</p>
+<p>&gt; Quyết định can thiệp sư phạm: Gán học liệu MAT-RD-01 làm điều kiện tiên quyết (Prerequisite). Khóa các bài tập Passage 3 nâng cao.</p>
+<p class="text-inverse-primary font-semibold">&gt; Kết quả xuất: Lộ trình thích ứng đã tái sắp xếp. Mục tiêu can thiệp: Phân biệt mâu thuẫn trực tiếp (Direct Contradiction).</p>
+</div>
+</div>
+</section>
+</main>
+</div>
+<!-- FLOATING INTERACTIVE MODAL: NẠP BÀI LÀM MỚI (TEST LOG UPLOADER) -->
+<div class="fixed inset-0 bg-on-background/40 backdrop-blur-xs z-50 flex items-center justify-center p-4 hidden" id="log-modal">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full border border-outline-variant shadow-xl overflow-hidden">
+<div class="p-5 border-b border-outline-variant/40 flex items-center justify-between bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="cloud_upload">cloud_upload</span>
+<h3 class="text-title-lg font-title-lg font-bold text-primary">Nạp Dữ Liệu Bài Làm (Test Log)</h3>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface" onclick="toggleModal('log-modal', false)">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+<div class="p-6 space-y-4">
+<div>
+<label class="block text-label-md font-label-md text-on-surface font-semibold mb-1">Mã bài kiểm tra (Test Code / Cam ID)</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg p-2.5 text-body-sm font-body-sm text-on-surface focus:border-primary focus:ring-1 focus:ring-primary" placeholder="Nhập tên bài thi..." type="text" value="Cambridge 17 • Test 1 Reading"/>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block text-label-md font-label-md text-on-surface font-semibold mb-1">Thời gian làm bài (Phút)</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg p-2.5 text-body-sm font-body-sm text-on-surface" type="number" value="58"/>
+</div>
+<div>
+<label class="block text-label-md font-label-md text-on-surface font-semibold mb-1">Số câu đúng (Total Raw / 40)</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg p-2.5 text-body-sm font-body-sm text-on-surface" type="number" value="25"/>
+</div>
+</div>
+<div>
+<label class="block text-label-md font-label-md text-on-surface font-semibold mb-1">Dán chuỗi kết quả (Answer Key Vector)</label>
+<textarea class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg p-2.5 text-body-sm font-body-sm font-mono text-on-surface" placeholder="Ví dụ: 1:TRUE, 2:NOT GIVEN, 3:FALSE..." rows="3">1:TRUE, 2:FALSE (User: NG), 3:NOT GIVEN (User: FALSE), 4:TRUE, 5:NOT GIVEN (User: FALSE)</textarea>
+<p class="text-label-sm font-label-sm text-on-surface-variant mt-1">Hệ thống sẽ bóc tách các câu sai và tự động phân loại vào ngân hàng lỗi sư phạm.</p>
+</div>
+<div class="p-3 bg-surface-container-low rounded-lg text-label-sm font-label-sm text-on-surface-variant border border-outline-variant/40 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base" data-icon="info">info</span>
+<span>Thuật toán sẽ chỉ cập nhật lộ trình khi dữ liệu đạt chuẩn ngưỡng N ≥ 5.</span>
+</div>
+</div>
+<div class="p-4 bg-surface-container-low border-t border-outline-variant/40 flex justify-end gap-2">
+<button class="px-4 py-2 rounded-lg border border-outline-variant text-on-surface font-title-md text-title-md hover:bg-surface-container-lowest" onclick="toggleModal('log-modal', false)">
+          Hủy bỏ
+        </button>
+<button class="px-4 py-2 rounded-lg bg-primary-container text-on-primary font-title-md text-title-md hover:bg-secondary flex items-center gap-1.5 shadow-sm" onclick="processTestLogSubmission()">
+<span class="material-symbols-outlined text-sm" data-icon="auto_awesome">auto_awesome</span>
+<span>Chạy Chẩn Đoán Thích Ứng</span>
+</button>
+</div>
+</div>
+</div>
+<!-- MODAL: CẤU HÌNH & GIỚI HẠN DỮ LIỆU (SETTINGS & THRESHOLDS) -->
+<div class="fixed inset-0 bg-on-background/40 backdrop-blur-xs z-50 flex items-center justify-center p-4 hidden" id="settings-modal">
+<div class="bg-surface-container-lowest rounded-xl max-w-md w-full border border-outline-variant shadow-xl overflow-hidden">
+<div class="p-5 border-b border-outline-variant/40 flex items-center justify-between bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="tune">tune</span>
+<h3 class="text-title-lg font-title-lg font-bold text-primary">Cấu hình Ngưỡng Sư phạm</h3>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface" onclick="toggleModal('settings-modal', false)">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+<div class="p-6 space-y-4 text-body-sm font-body-sm">
+<div>
+<label class="block font-semibold text-on-surface mb-1 text-label-md font-label-md">Ngưỡng mẫu tối thiểu (Min Sample Size N)</label>
+<div class="flex items-center gap-3">
+<input class="w-full accent-primary" max="10" min="3" type="range" value="5"/>
+<span class="font-bold text-primary font-mono">N=5</span>
+</div>
+<p class="text-label-sm font-label-sm text-on-surface-variant mt-1">Dưới 5 câu sẽ gắn cờ "Chưa đủ dữ liệu", tránh chẩn đoán sai lệch.</p>
+</div>
+<div>
+<label class="block font-semibold text-on-surface mb-1 text-label-md font-label-md">Ngưỡng cảnh báo tỷ lệ lỗi (Error Ratio Alert)</label>
+<div class="flex items-center gap-3">
+<input class="w-full accent-primary" max="70" min="30" type="range" value="50"/>
+<span class="font-bold text-primary font-mono">50%</span>
+</div>
+<p class="text-label-sm font-label-sm text-on-surface-variant mt-1">Tỷ lệ sai vượt 50% sẽ lập tức kích hoạt tái cấu trúc lộ trình.</p>
+</div>
+<div class="pt-2 border-t border-outline-variant/40">
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="rounded border-outline text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-on-surface text-label-md font-label-md">Bật ghi chép thời gian từng câu (Telemetry Logging)</span>
+</label>
+</div>
+</div>
+<div class="p-4 bg-surface-container-low border-t border-outline-variant/40 flex justify-end">
+<button class="px-4 py-2 rounded-lg bg-primary-container text-on-primary font-title-md text-title-md hover:bg-secondary" onclick="toggleModal('settings-modal', false)">
+          Lưu Cấu Hình
+        </button>
+</div>
+</div>
+</div>
+<!-- TOAST NOTIFICATION CONTAINER -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toast-notification">
+<div class="bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-lg shadow-lg flex items-center gap-3 border border-outline/30">
+<span class="material-symbols-outlined text-emerald-400 text-base" data-icon="check_circle">check_circle</span>
+<span class="text-body-sm font-body-sm font-medium" id="toast-text">Hành động thành công.</span>
+</div>
+</div>
+<!-- JAVASCRIPT LOGIC & INTERACTIONS -->
+<script>
+    // Modal Toggle Helper
+    function toggleModal(modalId, show) {
+      const el = document.getElementById(modalId);
+      if (el) {
+        if (show) {
+          el.classList.remove('hidden');
+        } else {
+          el.classList.add('hidden');
+        }
+      }
+    }
+
+    document.getElementById('open-log-btn')?.addEventListener('click', () => {
+      toggleModal('log-modal', true);
+    });
+
+    function openSettingsModal() {
+      toggleModal('settings-modal', true);
+    }
+
+    function toggleHelpModal() {
+      showToast("Quy tắc sư phạm: Hệ thống loại bỏ suy đoán ngẫu nhiên. Mọi phán đoán đều yêu cầu chứng cứ N >= 5.");
+    }
+
+    // Role Switching
+    let isStudentRole = true;
+    function toggleRole() {
+      isStudentRole = !isStudentRole;
+      const sBtn = document.getElementById('role-student-btn');
+      const tBtn = document.getElementById('role-tutor-btn');
+      
+      if (!isStudentRole) {
+        sBtn.className = "px-space-sm py-1 rounded text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-all";
+        tBtn.className = "px-space-sm py-1 rounded text-label-md font-label-md bg-surface-container-lowest text-primary shadow-sm font-semibold transition-all";
+        showToast("Đã chuyển chế độ: Giảng viên / Hướng dẫn viên (Xem chế độ đánh giá chi tiết)");
+      } else {
+        sBtn.className = "px-space-sm py-1 rounded text-label-md font-label-md bg-surface-container-lowest text-primary shadow-sm font-semibold transition-all";
+        tBtn.className = "px-space-sm py-1 rounded text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-all";
+        showToast("Đã chuyển chế độ: Sinh viên (Xem lộ trình cá nhân hóa)");
+      }
+    }
+
+    document.getElementById('role-student-btn')?.addEventListener('click', () => {
+      if (!isStudentRole) toggleRole();
+    });
+    document.getElementById('role-tutor-btn')?.addEventListener('click', () => {
+      if (isStudentRole) toggleRole();
+    });
+
+    // Toast Manager
+    function showToast(message) {
+      const toast = document.getElementById('toast-notification');
+      const toastText = document.getElementById('toast-text');
+      if (toast && toastText) {
+        toastText.innerText = message;
+        toast.classList.remove('translate-y-24', 'opacity-0');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        setTimeout(() => {
+          toast.classList.add('translate-y-24', 'opacity-0');
+          toast.classList.remove('translate-y-0', 'opacity-100');
+        }, 3200);
+      }
+    }
+
+    function triggerExportNotice() {
+      showToast("Đang kết xuất tệp PDF Báo cáo Chẩn đoán STU-2024-88A (Định dạng Học thuật)...");
+    }
+
+    // Scroll to Sections
+    function scrollToMaterials(materialId) {
+      const target = document.getElementById('card-' + materialId);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        target.classList.add('ring-2', 'ring-primary');
+        setTimeout(() => target.classList.remove('ring-2', 'ring-primary'), 2000);
+      }
+    }
+
+    function scrollToSimulation() {
+      const panel = document.getElementById('simulator-panel');
+      if (panel) {
+        panel.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function launchExercise(code) {
+      showToast(`Đang tải bài tập chuẩn hoá [${code}] từ ngân hàng dữ liệu...`);
+    }
+
+    // Test Log Submission Simulator
+    function processTestLogSubmission() {
+      toggleModal('log-modal', false);
+      showToast("Dữ liệu nạp thành công! Thuật toán đã chạy lại ma trận chẩn đoán.");
+    }
+
+    // Archetype Simulation Data & Logic
+    const archetypes = {
+      'A': {
+        title: "Sinh viên A",
+        subtitle: "Thiếu từ vựng & Paraphrase",
+        logs: [
+          "[HỒ SƠ SINH VIÊN A ĐƯỢC CHỌN]",
+          "> Dữ liệu đầu vào: N_attempts = 16, Vocabulary_Error_Rate = 62.5%, Paraphrase_Fail = 7 lần.",
+          "> Phân tích: Sai đều cả Passage 1 & Passage 2 ở các câu paraphrase từ đồng nghĩa bậc cao (C1-C2).",
+          "> Kiểm định điều kiện: Rule R-VOCAB-02 [Triggered = TRUE]. Lỗi không nằm ở logic mà do vốn từ học thuật thiếu hụt.",
+          "> Quyết định can thiệp sư phạm: Ưu tiên số 1 chuyển thành 'MAT-RD-04: Luyện Paraphrase Câu phức Học thuật'. Tạm hoãn tốc độ 15-20-25 phút."
+        ]
+      },
+      'B': {
+        title: "Sinh viên B (Hiện tại)",
+        subtitle: "Lỗi logic phân biệt True/False/Not Given",
+        logs: [
+          "[HỒ SƠ SINH VIÊN B ĐƯỢC CHỌN]",
+          "> Dữ liệu đầu vào: N_attempts = 12, False_rate = 58.3%, Contradiction_Detection = Thấp, Time_spent_P1 = 16.5m (Bình thường).",
+          "> Kiểm định điều kiện: Rule R-LOGIC-08 [Triggered = TRUE] vì sai lệch False/NG vượt ngưỡng 40% trong 3 bài nộp liên tiếp.",
+          "> Quyết định can thiệp sư phạm: Gán học liệu MAT-RD-01 làm điều kiện tiên quyết (Prerequisite). Khóa các bài tập Passage 3 nâng cao.",
+          "> Kết quả xuất: Lộ trình thích ứng đã tái sắp xếp. Mục tiêu can thiệp: Phân biệt mâu thuẫn trực tiếp (Direct Contradiction)."
+        ]
+      },
+      'C': {
+        title: "Sinh viên C",
+        subtitle: "Kẹt thời gian (Time Management Exhaustion)",
+        logs: [
+          "[HỒ SƠ SINH VIÊN C ĐƯỢC CHỌN]",
+          "> Dữ liệu đầu vào: Passage 1 Time = 25.2m (Vượt 48%), Passage 3 Time = 7.5m (Thiếu nghiêm trọng), Blind Guess Rate = 80%.",
+          "> Phân tích: Điểm Passage 1 đạt 90%, nhưng Passage 3 rớt xuống 25% hoàn toàn do hết thời gian làm bài.",
+          "> Kiểm định điều kiện: Rule R-TIME-01 [Triggered = TRUE]. Chẩn đoán: Hội chứng cầu toàn ở Passage 1 (Perfectionism Trap).",
+          "> Quyết định can thiệp sư phạm: Đẩy bài tập 'Chiến thuật Phân bổ Thời gian 15-20-25 phút' lên vị trí ưu tiên cao nhất ngay lập tức."
+        ]
+      }
+    };
+
+    function selectArchetype(type) {
+      // Button states
+      ['A', 'B', 'C'].forEach(t => {
+        const btn = document.getElementById('arch-btn-' + t);
+        if (btn) {
+          if (t === type) {
+            btn.className = "p-4 rounded-xl border-2 border-primary bg-surface-container-low text-left transition-all";
+          } else {
+            btn.className = "p-4 rounded-xl border-2 border-outline-variant/60 hover:border-primary text-left bg-surface-container-lowest transition-all";
+          }
+        }
+      });
+
+      // Update console
+      const arch = archetypes[type];
+      const consoleOutput = document.getElementById('arch-console-output');
+      if (consoleOutput && arch) {
+        consoleOutput.innerHTML = `
+          <p class="text-emerald-400 font-bold">${arch.logs[0]}</p>
+          <p>&gt; ${arch.logs[1]}</p>
+          <p>&gt; ${arch.logs[2]}</p>
+          <p class="text-amber-300">&gt; ${arch.logs[3]}</p>
+          <p class="text-inverse-primary font-semibold">&gt; ${arch.logs[4] || ''}</p>
+        `;
+        showToast(`Đã nạp giả lập thuật toán cho ${arch.title}`);
+      }
+    }
+  </script>
+</body></html>
